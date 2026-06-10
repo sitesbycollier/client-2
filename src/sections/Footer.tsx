@@ -206,7 +206,17 @@ export default function Footer() {
         <Separator className="bg-border mt-12 mb-6" />
         <div className="flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-xs text-muted-foreground tracking-wide">
-            © Art in Motion. All rights reserved.
+            © Art in Motion. All rights reserved. <br></br>
+            <br></br>
+            {" "}Design by{" "}
+            <a
+              href="https://sitesbycollier.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:opacity-80"
+            >
+              Sites By Collier
+            </a>
           </p>
           <p className="text-xs text-muted-foreground tracking-wide uppercase">
             Community Dance &amp; Arts Education
