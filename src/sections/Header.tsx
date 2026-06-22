@@ -1,162 +1,142 @@
 import { useState } from "react";
+import { NavLink, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { List, X, MapPin } from "@phosphor-icons/react";
+import { List, X } from "@phosphor-icons/react";
 
 const navLinks = [
-  { label: "Monthly Dances", href: "#monthly-dances" },
-  { label: "Gallery", href: "#community-gallery" },
-  { label: "Our Mission", href: "#mission-and-future-vision" },
+  { label: "About", to: "/about" },
+  { label: "Programs", to: "/programs" },
+  { label: "The Gathering Center", to: "/gathering-center" },
+  { label: "Capital Campaign", to: "/campaign" },
+  { label: "Get Involved", to: "/get-involved" },
 ];
-
-const scheduleNote = "2nd Sun 3–5:30 pm · 4th Thu 6:30–9 pm · $15 at door";
 
 export default function Header() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   return (
-    <header
-      id="header"
-      className="sticky top-0 z-40 bg-background/95 backdrop-blur border-b border-border"
-    >
-      {/* Framed divider accent — one restrained gallery-wall detail */}
-      <div className="h-px w-full bg-muted" aria-hidden="true" />
-
+    <header className="sticky top-0 z-40 bg-white border-b border-border shadow-sm">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
-        <div className="flex items-center justify-between h-16 gap-4">
+        <div className="flex items-center justify-between h-[4.5rem] gap-4">
           {/* Wordmark */}
-          <a
-            href="#top"
+          <Link
+            to="/"
             className="flex-shrink-0 flex flex-col leading-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
           >
-            <span className="font-heading text-lg tracking-tight text-foreground leading-tight">
-              Art in Motion
+            <span className="font-heading text-xl md:text-2xl tracking-tight text-foreground leading-tight">
+              Arts in Motion
             </span>
-            <span className="text-xs uppercase tracking-widest text-muted-foreground leading-tight">
-              Community Dance &amp; Arts
+            <span className="text-[10px] uppercase tracking-[0.15em] text-muted-foreground leading-tight font-sans">
+              Hot Springs, AR &nbsp;·&nbsp; Nonprofit
             </span>
-          </a>
+          </Link>
 
-          {/* Desktop nav — centered */}
+          {/* Desktop nav */}
           <nav
-            className="hidden md:flex items-center gap-6 flex-1 justify-center"
+            className="hidden lg:flex items-center gap-0.5 flex-1 justify-center"
             aria-label="Primary navigation"
           >
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-sm font-heading tracking-wide text-muted-foreground hover:text-foreground transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
+              <NavLink
+                key={link.to}
+                to={link.to}
+                className={({ isActive }) =>
+                  `px-3 py-1.5 text-sm font-sans tracking-wide rounded-sm transition-colors duration-200 whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ${
+                    isActive
+                      ? "bg-primary/10 text-primary font-medium"
+                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                  }`
+                }
               >
                 {link.label}
-              </a>
+              </NavLink>
             ))}
           </nav>
 
-          {/* Right side: schedule note + CTAs */}
-          <div className="hidden md:flex items-center gap-3 flex-shrink-0">
-            <span className="text-xs text-muted-foreground tracking-wide border-r border-border pr-3 whitespace-nowrap">
-              {scheduleNote}
-            </span>
-            <a
-              href="#mission-and-future-vision"
-              className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
-            >
+          {/* Desktop CTAs */}
+          <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
+            <Link to="/campaign">
               <Button
                 variant="outline"
                 size="sm"
-                className="rounded-sm text-xs tracking-wide border-border hover:bg-muted hover:text-foreground transition-colors duration-300"
+                className="rounded-sm text-xs tracking-wide border-primary text-primary hover:bg-primary hover:text-white transition-colors duration-200"
               >
-                Donate
+                Support the Campaign
               </Button>
-            </a>
-            <a
-              href="#footer"
-              className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
-            >
+            </Link>
+            <Link to="/get-involved">
               <Button
                 size="sm"
-                className="rounded-sm text-xs tracking-wide bg-primary text-primary-foreground hover:opacity-90 transition-opacity duration-300"
+                className="rounded-sm text-xs tracking-wide bg-primary text-white hover:bg-primary/90 transition-colors duration-200"
               >
-                Get in Touch
+                Get Involved
               </Button>
-            </a>
+            </Link>
           </div>
 
-          {/* Mobile: action + hamburger */}
-          <div className="flex md:hidden items-center gap-2">
-            <a
-              href="#footer"
-              className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
-            >
+          {/* Mobile hamburger */}
+          <div className="flex lg:hidden items-center gap-2">
+            <Link to="/get-involved">
               <Button
                 size="sm"
-                className="rounded-sm text-xs tracking-wide bg-primary text-primary-foreground hover:opacity-90 transition-opacity duration-300"
+                className="rounded-sm text-xs tracking-wide bg-primary text-white hover:bg-primary/90"
               >
-                Get in Touch
+                Get Involved
               </Button>
-            </a>
+            </Link>
             <button
               onClick={() => setMobileNavOpen((prev) => !prev)}
               aria-label={mobileNavOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileNavOpen}
-              className="p-2 text-foreground hover:text-muted-foreground transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
+              className="p-2 text-foreground hover:text-muted-foreground transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
             >
               {mobileNavOpen ? (
-                <X size={20} weight="duotone" />
+                <X size={22} weight="bold" />
               ) : (
-                <List size={20} weight="duotone" />
+                <List size={22} weight="bold" />
               )}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile nav overlay */}
+      {/* Mobile nav dropdown */}
       {mobileNavOpen && (
-        <div className="md:hidden bg-background border-t border-border">
+        <div className="lg:hidden bg-white border-t border-border shadow-lg">
           <nav
-            className="max-w-7xl mx-auto px-4 py-6 flex flex-col gap-1"
+            className="max-w-7xl mx-auto px-4 py-3 flex flex-col"
             aria-label="Mobile navigation"
           >
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
+              <NavLink
+                key={link.to}
+                to={link.to}
                 onClick={() => setMobileNavOpen(false)}
-                className="py-3 text-sm font-heading tracking-wide text-muted-foreground hover:text-foreground border-b border-border last:border-b-0 transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
+                className={({ isActive }) =>
+                  `py-3 px-3 text-sm font-sans tracking-wide border-b border-border last:border-b-0 transition-colors duration-200 rounded-sm ${
+                    isActive
+                      ? "text-primary font-medium bg-primary/5"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`
+                }
               >
                 {link.label}
-              </a>
+              </NavLink>
             ))}
-            <div className="pt-4 flex flex-col gap-3">
-              <div className="flex items-start gap-2 text-xs text-muted-foreground tracking-wide">
-                <MapPin
-                  size={14}
-                  weight="duotone"
-                  className="mt-0.5 flex-shrink-0"
-                />
-                <span>{scheduleNote}</span>
-              </div>
-              <a
-                href="#mission-and-future-vision"
-                onClick={() => setMobileNavOpen(false)}
-                className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
-              >
+            <div className="pt-4 pb-2">
+              <Link to="/campaign" onClick={() => setMobileNavOpen(false)}>
                 <Button
                   variant="outline"
                   size="sm"
-                  className="w-full rounded-sm text-xs tracking-wide border-border hover:bg-muted hover:text-foreground transition-colors duration-300"
+                  className="w-full rounded-sm text-xs tracking-wide border-primary text-primary hover:bg-primary hover:text-white"
                 >
-                  Donate
+                  Support the Campaign
                 </Button>
-              </a>
+              </Link>
             </div>
           </nav>
         </div>
       )}
-
-      {/* Bottom framed-divider accent */}
-      <div className="h-px w-full bg-muted" aria-hidden="true" />
     </header>
   );
 }

@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/**/*.{html,js,ts,jsx,tsx}"],
+  content: ["./src/**/*.{html,js,ts,jsx,tsx}", "./index.html"],
   theme: {
     extend: {
       colors: {
@@ -44,10 +44,21 @@ module.exports = {
       },
       fontFamily: {
         sans: ["'Inter'", "system-ui", "sans-serif"],
-        heading: ["'Inter'", "system-ui", "sans-serif"],
+        heading: ["'Playfair Display'", "Georgia", "serif"],
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            fontFamily: "var(--font-body)",
+          },
+        },
       },
     },
-    container: { center: true, padding: "2rem", screens: { "2xl": "1400px" } },
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: { "2xl": "1400px" },
+    },
   },
   plugins: [],
   darkMode: ["class"],

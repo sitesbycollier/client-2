@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,29 +6,29 @@
 
 @layer base {
   :root {
-    --background: 33 13% 83%;
-    --foreground: 0 0% 7%;
-    --card: 37 27% 94%;
-    --card-foreground: 0 0% 7%;
-    --popover: 37 27% 94%;
-    --popover-foreground: 0 0% 7%;
-    --primary: 94 15% 49%;
-    --primary-foreground: 0 0% 7%;
-    --secondary: 33 13% 83%;
-    --secondary-foreground: 0 0% 7%;
-    --muted: 33 13% 83%;
-    --muted-foreground: 33 6% 35%;
-    --accent: 24 49% 59%;
-    --accent-foreground: 0 0% 7%;
-    --destructive: 8 47% 44%;
-    --destructive-foreground: 33 13% 83%;
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 94 15% 49%;
-    --radius: 0.5rem;
+    --background: 40 30% 97%;
+    --foreground: 220 20% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 12%;
+    --primary: 212 65% 38%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 40 25% 92%;
+    --secondary-foreground: 220 20% 12%;
+    --muted: 40 20% 94%;
+    --muted-foreground: 220 10% 45%;
+    --accent: 32 70% 55%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 212 65% 38%;
+    --radius: 0.25rem;
 
-    --font-heading: 'Inter', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-heading: "Playfair Display", Georgia, serif;
+    --font-body: "Inter", system-ui, sans-serif;
   }
 }
 
@@ -36,9 +36,14 @@
   * {
     @apply border-border;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   h1,
   h2,
@@ -48,5 +53,15 @@
   h6 {
     font-family: var(--font-heading);
     font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+  .font-sans {
+    font-family: var(--font-body);
   }
 }

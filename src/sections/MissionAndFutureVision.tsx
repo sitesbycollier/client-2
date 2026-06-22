@@ -6,7 +6,7 @@ const statementPanels = [
     icon: Users,
     label: "Community Dance Education",
     headline: "Learning to move, together",
-    body: "Art in Motion brings structured, welcoming dance instruction to the community — no experience required. Classes are designed to meet people where they are, building confidence, coordination, and connection through movement.",
+    body: "Arts in Motion brings structured, welcoming dance instruction to the community — no experience required. Classes are designed to meet people where they are, building confidence, coordination, and connection through movement.",
   },
   {
     icon: MusicNote,
@@ -18,7 +18,7 @@ const statementPanels = [
     icon: Buildings,
     label: "Future Event Center Vision",
     headline: "A permanent home for celebration",
-    body: "The long-term vision for Art in Motion is a dedicated event center — a beautiful, community-owned space capable of hosting weddings, receptions, and milestone gatherings. Every dance and class today is a step toward that future.",
+    body: "The long-term vision for Arts in Motion is a dedicated event center — a beautiful, community-owned space capable of hosting weddings, receptions, and milestone gatherings. Every dance and class today is a step toward that future.",
   },
 ];
 
@@ -40,7 +40,7 @@ export default function MissionAndFutureVision() {
         </h2>
 
         <p className="text-base md:text-lg text-muted-foreground text-center max-w-prose mb-16 leading-relaxed">
-          Art in Motion is a local nonprofit rooted in the belief that dance
+          Arts in Motion is a local nonprofit rooted in the belief that dance
           belongs to everyone. What begins on the dance floor grows into
           something larger — a community, a tradition, and one day, a place to
           call home.
@@ -80,14 +80,14 @@ export default function MissionAndFutureVision() {
           <div className="border border-border bg-background p-3 rounded-sm">
             <div className="aspect-video w-full overflow-hidden rounded-sm">
               <img
-                src="https://c.animaapp.com/mq5kpwlakJjW7m/img/ai_2.png"
-                alt="Dance social gathering with refreshments"
+                src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&q=80"
+                alt="Live music performance on stage with warm stage lighting — arts and culture"
                 loading="lazy"
                 className="w-full h-full object-cover transition-all duration-300 hover:brightness-105"
               />
             </div>
             <p className="mt-3 text-xs text-muted-foreground text-center tracking-wide uppercase">
-              Community gathering — monthly social dance
+              Arts in Motion — where creativity and community meet
             </p>
           </div>
         </div>

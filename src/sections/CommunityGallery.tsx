@@ -3,25 +3,25 @@ import { Images, CalendarBlank, MapPin } from "@phosphor-icons/react";
 const galleryItems = [
   {
     id: 1,
-    url: "https://c.animaapp.com/mq5kpwlakJjW7m/img/ai_1.png",
-    alt: "Community dance class in motion",
+    url: "https://c.animaapp.com/mq5kpwlakJjW7m/img/generated-image-1781223616856.png",
+    alt: "Diverse adults laughing and dancing joyfully at an AIM community social event",
     caption: "Monthly Dance Social",
     date: "May 2025",
     size: "large",
   },
   {
     id: 2,
-    url: "https://c.animaapp.com/mq5kpwlakJjW7m/img/ai_2.png",
-    alt: "Dance social gathering with refreshments",
-    caption: "Heavy Hors d'Oeuvres & Dancing",
+    url: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&q=80",
+    alt: "Adults in an arts and crafts workshop — creative community programming",
+    caption: "The Gathering Center Vision",
     date: "April 2025",
     size: "small",
   },
   {
     id: 3,
-    url: "https://c.animaapp.com/mq5kpwlakJjW7m/img/ai_3.png",
-    alt: "Event hall prepared for celebration",
-    caption: "Community Gathering Space",
+    url: "https://images.unsplash.com/photo-1464047736614-af63643285bf?w=1200&q=80",
+    alt: "Warm outdoor community gathering — neighbors connecting at a festive evening event",
+    caption: "Arts &amp; Cultural Programming",
     date: "March 2025",
     size: "small",
   },
@@ -54,7 +54,7 @@ export default function CommunityGallery() {
           </h2>
           <p className="text-base text-muted-foreground leading-relaxed">
             A curated look at the dances, gatherings, and shared joy that define
-            Art in Motion. Each event is a step toward our vision of a
+            Arts in Motion. Each event is a step toward our vision of a
             permanent community arts and event center.
           </p>
         </div>

@@ -1,21 +1,27 @@
-import Header from "./sections/Header";
-import Hero from "./sections/Hero";
-import MonthlyDances from "./sections/MonthlyDances";
-import CommunityGallery from "./sections/CommunityGallery";
-import MissionAndFutureVision from "./sections/MissionAndFutureVision";
-import Footer from "./sections/Footer";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from "./components/Layout";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import GatheringCenterPage from "./pages/GatheringCenterPage";
+import ProgramsPage from "./pages/ProgramsPage";
+import CampaignPage from "./pages/CampaignPage";
+import GetInvolvedPage from "./pages/GetInvolvedPage";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      { index: true, element: <HomePage /> },
+      { path: "about", element: <AboutPage /> },
+      { path: "gathering-center", element: <GatheringCenterPage /> },
+      { path: "programs", element: <ProgramsPage /> },
+      { path: "campaign", element: <CampaignPage /> },
+      { path: "get-involved", element: <GetInvolvedPage /> },
+    ],
+  },
+]);
 
 export default function App() {
-  return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Header />
-      <main>
-        <Hero />
-        <MonthlyDances />
-        <CommunityGallery />
-        <MissionAndFutureVision />
-      </main>
-      <Footer />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
