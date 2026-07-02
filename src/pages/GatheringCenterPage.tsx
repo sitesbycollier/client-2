@@ -194,7 +194,7 @@ export default function GatheringCenterPage() {
             </div>
           </div>
           <p className="text-base text-muted-foreground font-sans max-w-2xl leading-relaxed">
-            Hot Springs has long been a city people come to in search of
+            Hot Springs has long been a place where people come in search of
             restoration, connection, and renewal. The Gathering Place will
             honor that legacy — creating a lasting, accessible destination where
             residents and visitors alike can find community, purpose, and
