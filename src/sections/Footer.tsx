@@ -12,7 +12,7 @@ import {
 const navLinks = [
   { label: "About AIM", to: "/about" },
   { label: "Our Programs", to: "/programs" },
-  { label: "The Gathering Center", to: "/gathering-center" },
+  { label: "The Gathering Place", to: "/gathering-center" },
   { label: "Capital Campaign", to: "/campaign" },
   { label: "Get Involved", to: "/get-involved" },
 ];
@@ -29,7 +29,7 @@ export default function Footer() {
                 Nonprofit Organization
               </p>
               <h2 className="font-heading text-2xl text-background leading-snug">
-                Arts in Motion
+                Art in Motion
               </h2>
               <p className="text-[10px] uppercase tracking-widest text-background/40 mt-1 font-sans">
                 Hot Springs &amp; Garland County, AR
@@ -44,7 +44,7 @@ export default function Footer() {
                 Hero Project
               </p>
               <p className="font-heading text-base text-background leading-tight">
-                The Gathering Center
+                The Gathering Place
               </p>
               <p className="text-xs text-background/45 font-sans mt-0.5">
                 Capital Campaign &nbsp;·&nbsp; $1,500,000 Goal
@@ -162,7 +162,7 @@ export default function Footer() {
         <Separator className="bg-background/15 mt-12 mb-6" />
         <div className="flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-xs text-background/35 tracking-wide font-sans">
-            © {new Date().getFullYear()} Arts in Motion. All rights reserved.
+            © {new Date().getFullYear()} Art in Motion. All rights reserved.
             &nbsp;·&nbsp; 501(c)(3) Nonprofit Organization
           </p>
           <p className="text-xs text-background/35 tracking-wide flex items-center gap-1.5 font-sans">

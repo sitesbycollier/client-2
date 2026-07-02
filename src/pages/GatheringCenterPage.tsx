@@ -48,9 +48,9 @@ export default function GatheringCenterPage() {
   return (
     <div className="bg-white">
       <PageHero
-        eyebrow="Hero Project &amp;nbsp;·&amp;nbsp; Arts in Motion"
+        eyebrow="Hero Project &amp;nbsp;·&amp;nbsp; Art in Motion"
         eyebrowClassName="text-accent"
-        title="The Gathering Center"
+        title="The Gathering Place"
         description="A permanent, welcoming destination where adults come together to learn, celebrate, create, connect, and thrive — strengthening the cultural, economic, and social fabric of Hot Springs and Garland County."
         backgroundImage="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1600&amp;q=80"
       >
@@ -75,7 +75,7 @@ export default function GatheringCenterPage() {
               A Welcoming Destination for the Entire Community
             </h2>
             <p className="text-base text-muted-foreground leading-relaxed font-sans mb-6">
-              The Gathering Center will be a place where adults feel genuinely
+              The Gathering Place will be a place where adults feel genuinely
               welcome — to move their bodies, stretch their minds, express their
               creativity, deepen friendships, and engage with their community in
               ways that matter. It will be a destination built not around a
@@ -83,7 +83,7 @@ export default function GatheringCenterPage() {
               when they have meaningful places to gather.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed font-sans">
-              Operated by Arts in Motion, the facility will serve as a regional
+              Operated by Art in Motion, the facility will serve as a regional
               hub for adult wellness, lifelong learning, arts and cultural
               engagement, nonprofit collaboration, civic programming, and
               community celebration — with flexible space designed to serve the
@@ -94,13 +94,13 @@ export default function GatheringCenterPage() {
             <div className="aspect-[4/3] overflow-hidden bg-muted">
               <img
                 src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80"
-                alt="Beautiful restored venue interior with elegant architecture — Gathering Center vision"
+                alt="Beautiful restored venue interior with elegant architecture — Gathering Place vision"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
             </div>
             <p className="text-xs text-muted-foreground mt-2 text-center uppercase tracking-wide font-sans">
-              The Gathering Center — Hot Springs, Arkansas
+              The Gathering Place — Hot Springs, Arkansas
             </p>
           </div>
         </div>
@@ -113,10 +113,10 @@ export default function GatheringCenterPage() {
             Facility Purpose
           </p>
           <blockquote className="font-heading text-2xl md:text-3xl text-foreground leading-relaxed">
-            &#8220;The Gathering Center will be a welcoming destination where
+            &#8220;The Gathering Place will be a welcoming destination where
             adults gather to learn, celebrate, create, connect, and thrive. As a
             center for wellness, arts, education, culture, and community
-            engagement, The Gathering Center will strengthen quality of life,
+            engagement, The Gathering Place will strengthen quality of life,
             support local organizations, attract visitors, encourage investment,
             and serve as a lasting community asset for Hot Springs and Garland
             County.&#8221;
@@ -134,7 +134,7 @@ export default function GatheringCenterPage() {
             Program Pillars
           </h2>
           <p className="text-base text-muted-foreground font-sans mt-4 max-w-2xl mx-auto">
-            The Gathering Center will be home to five interconnected program
+            The Gathering Place will be home to five interconnected program
             areas — each one addressing a dimension of what it means to truly
             thrive: body, mind, spirit, creativity, and community.
           </p>
@@ -195,7 +195,7 @@ export default function GatheringCenterPage() {
           </div>
           <p className="text-base text-muted-foreground font-sans max-w-2xl leading-relaxed">
             Hot Springs has long been a city people come to in search of
-            restoration, connection, and renewal. The Gathering Center will
+            restoration, connection, and renewal. The Gathering Place will
             honor that legacy — creating a lasting, accessible destination where
             residents and visitors alike can find community, purpose, and
             belonging at the heart of the city.
@@ -214,7 +214,7 @@ export default function GatheringCenterPage() {
           </h2>
           <p className="text-base text-white/75 font-sans mb-8 max-w-xl mx-auto">
             We are raising $1,500,000 to acquire, restore, and sustain The
-            Gathering Center. Every gift helps build something lasting for Hot
+            Gathering Place. Every gift helps build something lasting for Hot
             Springs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

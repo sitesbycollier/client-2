@@ -17,7 +17,7 @@ const ways = [
     icon: Heart,
     title: "Donate",
     subtitle: "Support the Capital Campaign",
-    body: "Your gift helps build The Gathering Center — a permanent home for community programming, arts, wellness, and celebration in Hot Springs. Every dollar moves us closer to $1,500,000.",
+    body: "Your gift helps build The Gathering Place — a permanent home for community programming, arts, wellness, and celebration in Hot Springs. Every dollar moves us closer to $1,500,000.",
     cta: "Support the Campaign",
     to: "/campaign",
   },
@@ -33,7 +33,7 @@ const ways = [
     icon: Users,
     title: "Volunteer",
     subtitle: "Give your time",
-    body: "Arts in Motion is powered by community. Whether you can help at events, support outreach, or bring a skill to share, there&#39;s a meaningful role for you.",
+    body: "Art in Motion is powered by community. Whether you can help at events, support outreach, or bring a skill to share, there&#39;s a meaningful role for you.",
     cta: "Connect with Us",
     to: "#contact",
   },
@@ -47,7 +47,7 @@ const ways = [
   },
   {
     icon: Buildings,
-    title: "Support The Gathering Center",
+    title: "Support The Gathering Place",
     subtitle: "Name a space · Legacy gifts · Grants",
     body: "Interested in a naming opportunity, a major gift, a planned gift, or a foundation grant? Contact us to learn how your investment can be recognized and sustained.",
     cta: "Campaign Details",
@@ -57,7 +57,7 @@ const ways = [
     icon: EnvelopeSimple,
     title: "Stay Connected",
     subtitle: "Updates, events, and news",
-    body: "Sign up to receive Arts in Motion news, event reminders, and campaign updates delivered to your inbox. Be the first to hear about new programs and milestones.",
+    body: "Sign up to receive Art in Motion news, event reminders, and campaign updates delivered to your inbox. Be the first to hear about new programs and milestones.",
     cta: "Sign Up Below",
     to: "#contact",
   },
@@ -90,7 +90,7 @@ export default function GetInvolvedPage() {
     <div className="bg-white">
       <PageHero
         eyebrow="Take Action"
-        title="Get Involved with Arts in Motion"
+        title="Get Involved with Art in Motion"
         description="There are many ways to join us — donate, volunteer, attend a dance, partner with us, or simply stay connected. Every act of support helps build a community where adults can connect, learn, celebrate, and belong."
         backgroundImage="https://c.animaapp.com/mq5kpwlakJjW7m/img/generated-image-1781223746614.png"
       />
@@ -156,7 +156,7 @@ export default function GetInvolvedPage() {
               Reach Out
             </p>
             <h2 className="font-heading text-3xl md:text-4xl text-foreground leading-tight">
-              Contact Arts in Motion
+              Contact Art in Motion
             </h2>
             <p className="text-base text-muted-foreground font-sans mt-4 max-w-xl mx-auto">
               Have a question, want to volunteer, or ready to support the
@@ -300,8 +300,8 @@ export default function GetInvolvedPage() {
           Want to Learn More First?
         </h2>
         <p className="text-base text-muted-foreground font-sans mb-8 max-w-xl mx-auto">
-          Explore our mission, programs, and The Gathering Center capital
-          campaign — and see the full picture of what Arts in Motion is building
+          Explore our mission, programs, and The Gathering Place capital
+          campaign — and see the full picture of what Art in Motion is building
           for Hot Springs.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

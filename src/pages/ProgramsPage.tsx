@@ -69,7 +69,7 @@ const programs = [
     number: "04",
     title: "Community Connection",
     subtitle: "Connect, belong, and participate",
-    body: "Programs and events that strengthen relationships, reduce social isolation, and encourage civic participation. Community is at the heart of everything Arts in Motion does.",
+    body: "Programs and events that strengthen relationships, reduce social isolation, and encourage civic participation. Community is at the heart of everything Art in Motion does.",
     examples: [
       "Monthly social dances",
       "Community gatherings",
@@ -106,7 +106,7 @@ export default function ProgramsPage() {
       <PageHero
         eyebrow="What We Do"
         title="Our Programs"
-        description="Arts in Motion brings together five interconnected program pillars — each addressing a dimension of what it means to truly thrive: physical wellness, creative expression, intellectual growth, civic engagement, and the kind of social connection that makes a community feel like home."
+        description="Art in Motion brings together five interconnected program pillars — each addressing a dimension of what it means to truly thrive: physical wellness, creative expression, intellectual growth, civic engagement, and the kind of social connection that makes a community feel like home."
         backgroundImage="https://c.animaapp.com/mq5kpwlakJjW7m/img/generated-image-1781223616856.png"
       />
 
@@ -212,7 +212,7 @@ export default function ProgramsPage() {
               <p className="text-base text-muted-foreground font-sans mb-6 leading-relaxed">
                 Our flagship program — open to all adults, no experience
                 required. Held twice monthly, these gatherings are the heartbeat
-                of Arts in Motion: joyful, welcoming, and community-centered.
+                of Art in Motion: joyful, welcoming, and community-centered.
               </p>
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="bg-white border border-border p-4 flex flex-col gap-1">
@@ -261,7 +261,7 @@ export default function ProgramsPage() {
         </div>
       </div>
 
-      {/* Link to Gathering Center */}
+      {/* Link to Gathering Place */}
       <div className="bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 py-16 text-center">
           <Buildings
@@ -273,7 +273,7 @@ export default function ProgramsPage() {
             Programs Growing Into a Permanent Home
           </h2>
           <p className="text-base text-white/75 font-sans mb-8 max-w-xl mx-auto">
-            The Gathering Center will give every program pillar a permanent,
+            The Gathering Place will give every program pillar a permanent,
             dedicated home — creating a regional destination where adults can
             pursue wellness, learning, creativity, and connection all under one
             roof.
@@ -284,7 +284,7 @@ export default function ProgramsPage() {
                 size="lg"
                 className="bg-white text-primary hover:bg-white/90 rounded-sm font-sans flex items-center gap-2"
               >
-                The Gathering Center <ArrowRight size={16} weight="bold" />
+                The Gathering Place <ArrowRight size={16} weight="bold" />
               </Button>
             </Link>
             <Link to="/get-involved">

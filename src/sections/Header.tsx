@@ -6,7 +6,7 @@ import { List, X } from "@phosphor-icons/react";
 const navLinks = [
   { label: "About", to: "/about" },
   { label: "Programs", to: "/programs" },
-  { label: "The Gathering Center", to: "/gathering-center" },
+  { label: "The Gathering Place", to: "/gathering-center" },
   { label: "Capital Campaign", to: "/campaign" },
   { label: "Get Involved", to: "/get-involved" },
 ];
@@ -24,7 +24,7 @@ export default function Header() {
             className="flex-shrink-0 flex flex-col leading-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
           >
             <span className="font-heading text-xl md:text-2xl tracking-tight text-foreground leading-tight">
-              Arts in Motion
+              Art in Motion
             </span>
             <span className="text-[10px] uppercase tracking-[0.15em] text-muted-foreground leading-tight font-sans">
               Hot Springs, AR &nbsp;·&nbsp; Nonprofit

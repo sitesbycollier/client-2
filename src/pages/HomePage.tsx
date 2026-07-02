@@ -52,7 +52,7 @@ export default function HomePage() {
               <em className="text-accent/90 not-italic">Thrive.</em> Together.
             </h1>
             <p className="text-lg md:text-xl text-white/75 max-w-xl leading-relaxed mb-3 font-sans">
-              Arts in Motion is a nonprofit organization dedicated to helping
+              Art in Motion is a nonprofit organization dedicated to helping
               adults live fuller, healthier, more connected lives — through
               wellness, arts, lifelong learning, and meaningful community
               experiences.
@@ -66,7 +66,7 @@ export default function HomePage() {
                   size="lg"
                   className="bg-white text-foreground hover:bg-white/90 rounded-none font-sans font-medium tracking-wide flex items-center gap-2 px-8 py-6 text-base shadow-lg"
                 >
-                  The Gathering Center <ArrowRight size={16} weight="bold" />
+                  The Gathering Place <ArrowRight size={16} weight="bold" />
                 </Button>
               </Link>
               <Link to="/campaign">
@@ -117,7 +117,7 @@ export default function HomePage() {
               A Nonprofit Built for Community
             </h2>
             <p className="text-base text-muted-foreground leading-relaxed mb-5 font-sans">
-              Arts in Motion is <em>not</em> a dance organization, a senior
+              Art in Motion is <em>not</em> a dance organization, a senior
               center, or an event company. We are a community-based nonprofit
               dedicated to helping adults connect, learn, engage, and thrive —
               through wellness, arts, education, recreation, and social
@@ -125,7 +125,7 @@ export default function HomePage() {
             </p>
             <p className="text-base text-muted-foreground leading-relaxed mb-8 font-sans">
               Everything we do — from our monthly community dances to The
-              Gathering Center capital campaign — flows from one belief: that
+              Gathering Place capital campaign — flows from one belief: that
               when people have meaningful places to gather, learn, create, and
               belong, entire communities grow stronger.
             </p>
@@ -159,7 +159,7 @@ export default function HomePage() {
                 />
               </div>
               <p className="text-xs text-muted-foreground mt-2 text-center uppercase tracking-wide font-sans">
-                Movement & Joy — Arts in Motion
+                Movement & Joy — Art in Motion
               </p>
             </div>
             <div className="absolute -bottom-4 -left-4 bg-accent text-white px-4 py-2.5 shadow-md hidden md:block">
@@ -178,11 +178,11 @@ export default function HomePage() {
             Mission Statement
           </p>
           <blockquote className="font-heading text-2xl md:text-3xl text-foreground leading-relaxed italic">
-            “Arts in Motion strengthens communities by creating opportunities
+            “Art in Motion strengthens communities by creating opportunities
             for adults to connect, learn, engage, and thrive through wellness,
             arts, lifelong learning, and meaningful community experiences.
             Through innovative programming, strategic partnerships, and
-            stewardship of The Gathering Center, we foster connection and
+            stewardship of The Gathering Place, we foster connection and
             contribute to the long-term vitality of Hot Springs and Garland
             County.”
           </blockquote>
@@ -200,7 +200,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* ── THE GATHERING CENTER FEATURE ── */}
+      {/* ── The Gathering Place FEATURE ── */}
       <div className="bg-slate-900 text-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 py-20 md:py-28">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
@@ -208,13 +208,13 @@ export default function HomePage() {
               <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80"
-                  alt="Elegant ballroom event hall with warm lighting — The Gathering Center vision"
+                  alt="Elegant ballroom event hall with warm lighting — The Gathering Place vision"
                   className="w-full h-full object-cover opacity-85"
                   loading="lazy"
                 />
               </div>
               <p className="text-xs text-white/35 mt-2 text-center uppercase tracking-wide font-sans">
-                The Gathering Center — vision for Hot Springs
+                The Gathering Place — vision for Hot Springs
               </p>
             </div>
             <div>
@@ -222,16 +222,16 @@ export default function HomePage() {
                 Hero Project
               </p>
               <h2 className="font-heading text-4xl md:text-5xl leading-tight text-white mb-6">
-                The Gathering Center
+                The Gathering Place
               </h2>
               <p className="text-base text-white/70 leading-relaxed mb-5 font-sans">
                 A permanent, welcoming destination where adults gather to learn,
-                celebrate, create, connect, and thrive. The Gathering Center
+                celebrate, create, connect, and thrive. The Gathering Place
                 will strengthen the cultural, economic, and social fabric of the
                 region — serving Hot Springs and Garland County for generations.
               </p>
               <p className="text-base text-white/70 leading-relaxed mb-8 font-sans">
-                Operated by Arts in Motion, the facility will provide flexible
+                Operated by Art in Motion, the facility will provide flexible
                 space for wellness programs, lifelong learning, arts and
                 cultural experiences, nonprofit partnerships, special events,
                 and civic engagement that together build a more vibrant,
@@ -374,7 +374,7 @@ export default function HomePage() {
                 variant="outline"
                 className="rounded-none font-sans text-xs tracking-widest border-primary text-primary hover:bg-primary hover:text-white flex items-center gap-1.5 mx-auto"
               >
-                About Arts in Motion <ArrowRight size={12} weight="bold" />
+                About Art in Motion <ArrowRight size={12} weight="bold" />
               </Button>
             </Link>
           </div>
@@ -413,7 +413,7 @@ export default function HomePage() {
                 Support the Capital Campaign
               </p>
               <p className="text-sm text-white/65 font-sans mb-4">
-                Help us build The Gathering Center for Hot Springs.
+                Help us build The Gathering Place for Hot Springs.
               </p>
               <Link to="/campaign">
                 <Button

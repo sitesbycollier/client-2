@@ -37,7 +37,7 @@ const featuredDate = {
   label: "Upcoming Dance",
   title: "June 14 — Mark Your Calendar",
   description:
-    "Our next community dance is Sunday, June 14. Come as you are, bring a friend, and experience what Arts in Motion is all about.",
+    "Our next community dance is Sunday, June 14. Come as you are, bring a friend, and experience what Art in Motion is all about.",
   time: "3:00 – 5:30 pm",
 };
 
@@ -57,7 +57,7 @@ export default function MonthlyDances() {
             Monthly Community Dances
           </h2>
           <p className="mt-4 text-base md:text-lg text-muted-foreground max-w-prose">
-            Arts in Motion hosts regular dances throughout the month — welcoming
+            Art in Motion hosts regular dances throughout the month — welcoming
             dancers of every background into a warm, social setting. All are
             invited.
           </p>
@@ -148,7 +148,7 @@ export default function MonthlyDances() {
           {/* Sparse caption */}
           <div className="border-t border-border px-6 py-3">
             <p className="text-xs text-muted-foreground tracking-wide">
-              Arts in Motion — Community Dance, June 2025
+              Art in Motion — Community Dance, June 2025
             </p>
           </div>
         </div>

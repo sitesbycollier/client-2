@@ -61,9 +61,9 @@ export default function CampaignPage() {
   return (
     <div className="bg-white">
       <PageHero
-        eyebrow="Capital Campaign · Arts in Motion"
+        eyebrow="Capital Campaign · Art in Motion"
         title="Building a Place for Community"
-        description="Arts in Motion is launching the Gathering Center Capital Campaign to establish a permanent, welcoming destination where adults come together to connect, learn, celebrate, create, and thrive — and where community is built to last."
+        description="Art in Motion is launching The Gathering Place Capital Campaign to establish a permanent, welcoming destination where adults come together to connect, learn, celebrate, create, and thrive — and where community is built to last."
         backgroundImage="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600&q=80"
         overlayOpacityClassName="opacity-[0.08]"
         afterTitle={
@@ -89,7 +89,7 @@ export default function CampaignPage() {
               Why This Campaign, Why Now
             </h2>
             <p className="text-base text-muted-foreground leading-relaxed font-sans mb-5">
-              The Gathering Center is more than a building. It is an investment
+              The Gathering Place is more than a building. It is an investment
               in what makes a community worth staying in — and worth building.
               Hot Springs has a deep history as a place of restoration and
               gathering, and the need for accessible, permanent spaces where
@@ -114,13 +114,13 @@ export default function CampaignPage() {
             <div className="aspect-[4/3] overflow-hidden bg-muted">
               <img
                 src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80"
-                alt="Grand community event hall — The Gathering Center vision"
+                alt="Grand community event hall — The Gathering Place vision"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
             </div>
             <p className="text-xs text-muted-foreground mt-2 text-center uppercase tracking-wide font-sans">
-              The Gathering Center — Hot Springs, Arkansas
+              The Gathering Place — Hot Springs, Arkansas
             </p>
           </div>
         </div>
@@ -195,10 +195,10 @@ export default function CampaignPage() {
             Campaign Vision
           </p>
           <blockquote className="font-heading text-xl md:text-2xl text-foreground leading-relaxed">
-            &#8220;The Gathering Center will be a welcoming destination where
+            &#8220;The Gathering Place will be a welcoming destination where
             adults gather to learn, celebrate, create, connect, and thrive. As a
             center for wellness, arts, education, culture, and community
-            engagement, The Gathering Center will strengthen the cultural,
+            engagement, The Gathering Place will strengthen the cultural,
             economic, and social fabric of the region — supporting local
             organizations, attracting visitors, encouraging investment, and
             serving as a lasting asset for Hot Springs and Garland

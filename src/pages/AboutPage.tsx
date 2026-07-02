@@ -48,7 +48,7 @@ export default function AboutPage() {
   return (
     <div className="bg-white">
       <PageHero
-        eyebrow="About Arts in Motion"
+        eyebrow="About Art in Motion"
         title={
           <>
             A Community Built on
@@ -58,7 +58,7 @@ export default function AboutPage() {
             </em>
           </>
         }
-        description="Arts in Motion is not a dance organization, a senior center, or an event company. We are a community-based nonprofit dedicated to helping adults connect, learn, engage, and thrive — and to building the kind of community where that is possible for everyone."
+        description="Art in Motion is not a dance organization, a senior center, or an event company. We are a community-based nonprofit dedicated to helping adults connect, learn, engage, and thrive — and to building the kind of community where that is possible for everyone."
         backgroundImage="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=1600&q=80"
       />
 
@@ -73,11 +73,11 @@ export default function AboutPage() {
               Our Mission
             </h2>
             <p className="text-base text-muted-foreground leading-relaxed font-sans">
-              Arts in Motion strengthens communities by creating opportunities
+              Art in Motion strengthens communities by creating opportunities
               for adults to connect, learn, engage, and thrive through wellness,
               arts, lifelong learning, and meaningful community experiences.
               Through innovative programming, strategic partnerships, and
-              stewardship of The Gathering Center, we foster connection, enhance
+              stewardship of The Gathering Place, we foster connection, enhance
               quality of life, and contribute to the long-term vitality of Hot
               Springs and Garland County.
             </p>
@@ -90,7 +90,7 @@ export default function AboutPage() {
               Our Vision
             </h2>
             <p className="text-base text-muted-foreground leading-relaxed font-sans">
-              To establish The Gathering Center as a premier community
+              To establish The Gathering Place as a premier community
               destination where adults come together to pursue wellness,
               creativity, education, social connection, and civic engagement
               while strengthening the cultural, economic, and social fabric of
@@ -126,17 +126,17 @@ export default function AboutPage() {
               Organizational Positioning
             </h2>
             <p className="text-base text-muted-foreground leading-relaxed font-sans mb-5">
-              Arts in Motion is a nonprofit organization dedicated to helping
+              Art in Motion is a nonprofit organization dedicated to helping
               adults live healthier, more connected, more fulfilling lives —
               through wellness, arts, education, and community engagement.
-              Through The Gathering Center, the organization is creating a
+              Through The Gathering Place, the organization is creating a
               sustainable community asset that serves as a hub for adult
               enrichment, cultural experiences, lifelong learning, nonprofit
               collaboration, special events, and civic connection.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed font-sans mb-5">
               By expanding access to meaningful experiences and deepening
-              community participation, Arts in Motion contributes to a
+              community participation, Art in Motion contributes to a
               healthier, more vibrant, and economically resilient Hot Springs
               region — one where adults can continue to grow, contribute, and
               belong.
@@ -203,7 +203,7 @@ export default function AboutPage() {
           Ready to Learn More?
         </h2>
         <p className="text-base text-muted-foreground font-sans mb-8 max-w-xl mx-auto">
-          Explore The Gathering Center — our hero capital project — or find out
+          Explore The Gathering Place — our hero capital project — or find out
           how you can get involved in the mission.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -212,7 +212,7 @@ export default function AboutPage() {
               size="lg"
               className="bg-primary text-white hover:bg-primary/90 rounded-sm font-sans flex items-center gap-2"
             >
-              The Gathering Center <ArrowRight size={16} weight="bold" />
+              The Gathering Place <ArrowRight size={16} weight="bold" />
             </Button>
           </Link>
           <Link to="/get-involved">

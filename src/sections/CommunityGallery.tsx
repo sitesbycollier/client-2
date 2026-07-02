@@ -13,7 +13,7 @@ const galleryItems = [
     id: 2,
     url: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&q=80",
     alt: "Adults in an arts and crafts workshop — creative community programming",
-    caption: "The Gathering Center Vision",
+    caption: "The Gathering Place Vision",
     date: "April 2025",
     size: "small",
   },
@@ -54,7 +54,7 @@ export default function CommunityGallery() {
           </h2>
           <p className="text-base text-muted-foreground leading-relaxed">
             A curated look at the dances, gatherings, and shared joy that define
-            Arts in Motion. Each event is a step toward our vision of a
+            Art in Motion. Each event is a step toward our vision of a
             permanent community arts and event center.
           </p>
         </div>

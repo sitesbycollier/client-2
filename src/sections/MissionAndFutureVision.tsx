@@ -6,7 +6,7 @@ const statementPanels = [
     icon: Users,
     label: "Community Dance Education",
     headline: "Learning to move, together",
-    body: "Arts in Motion brings structured, welcoming dance instruction to the community — no experience required. Classes are designed to meet people where they are, building confidence, coordination, and connection through movement.",
+    body: "Art in Motion brings structured, welcoming dance instruction to the community — no experience required. Classes are designed to meet people where they are, building confidence, coordination, and connection through movement.",
   },
   {
     icon: MusicNote,
@@ -18,7 +18,7 @@ const statementPanels = [
     icon: Buildings,
     label: "Future Event Center Vision",
     headline: "A permanent home for celebration",
-    body: "The long-term vision for Arts in Motion is a dedicated event center — a beautiful, community-owned space capable of hosting weddings, receptions, and milestone gatherings. Every dance and class today is a step toward that future.",
+    body: "The long-term vision for Art in Motion is a dedicated event center — a beautiful, community-owned space capable of hosting weddings, receptions, and milestone gatherings. Every dance and class today is a step toward that future.",
   },
 ];
 
@@ -40,7 +40,7 @@ export default function MissionAndFutureVision() {
         </h2>
 
         <p className="text-base md:text-lg text-muted-foreground text-center max-w-prose mb-16 leading-relaxed">
-          Arts in Motion is a local nonprofit rooted in the belief that dance
+          Art in Motion is a local nonprofit rooted in the belief that dance
           belongs to everyone. What begins on the dance floor grows into
           something larger — a community, a tradition, and one day, a place to
           call home.
@@ -87,7 +87,7 @@ export default function MissionAndFutureVision() {
               />
             </div>
             <p className="mt-3 text-xs text-muted-foreground text-center tracking-wide uppercase">
-              Arts in Motion — where creativity and community meet
+              Art in Motion — where creativity and community meet
             </p>
           </div>
         </div>
