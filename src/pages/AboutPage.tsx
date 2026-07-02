@@ -149,9 +149,15 @@ export default function AboutPage() {
           </div>
           <div className="border border-border p-3 bg-white shadow-sm">
             <div className="aspect-[4/3] overflow-hidden bg-muted">
-              <img
+              {/* <img
                 src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80"
                 alt="Diverse group of adults smiling and engaged at a community table"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              /> */}
+              <img
+                src="/assets/images/monthly.jpg"
+                alt=""
                 className="w-full h-full object-cover"
                 loading="lazy"
               />

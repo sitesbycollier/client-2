@@ -52,7 +52,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61591778121648"
                 aria-label="Facebook"
                 target="_blank"
                 rel="noopener noreferrer"

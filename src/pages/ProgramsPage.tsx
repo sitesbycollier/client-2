@@ -177,13 +177,13 @@ export default function ProgramsPage() {
                     <img
                       src={
                         index === 0
-                          ? "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80"
+                          ? "/assets/images/listening.jpg"
                           : index === 1
                             ? "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&q=80"
                             : index === 2
                               ? "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80"
                               : index === 3
-                                ? "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80"
+                                ? "/assets/images/group-connection.jpg"
                                 : "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80"
                       }
                       alt={title}
@@ -249,9 +249,15 @@ export default function ProgramsPage() {
             </div>
             <div className="border border-border p-3 bg-white shadow-sm">
               <div className="aspect-[4/3] overflow-hidden bg-muted">
-                <img
+                {/* <img
                   src="https://c.animaapp.com/mq5kpwlakJjW7m/img/generated-image-1781223616856.png"
                   alt="Adults dancing joyfully at a community social"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                /> */}
+                <img
+                  src="/assets/images/monthly-3.jpg"
+                  alt=""
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
@@ -291,7 +297,7 @@ export default function ProgramsPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white/35 text-white hover:bg-white/10 rounded-sm font-sans"
+                className="bg-white text-primary hover:bg-white/90 rounded-sm font-sans flex items-center gap-2"
               >
                 Get Involved
               </Button>

@@ -151,9 +151,15 @@ export default function HomePage() {
           <div className="relative">
             <div className="border border-border p-3 bg-white shadow-md">
               <div className="aspect-[4/3] overflow-hidden bg-muted">
-                <img
+                {/* <img
                   src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80"
                   alt="Diverse adults laughing and connecting at a community gathering"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                /> */}
+                <img
+                  src="/assets/images/home-group.jpg"
+                  alt=""
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
