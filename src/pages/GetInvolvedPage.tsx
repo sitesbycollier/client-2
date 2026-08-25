@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import PageHero from "@/components/PageHero";
+import { eventsSignupPath } from "@/data/externalLinks";
 import {
   ArrowRight,
   Heart,
@@ -27,7 +28,7 @@ const ways = [
     subtitle: "Join us monthly",
     body: "Come as you are. No experience required. Our monthly community dances are open to everyone — just $15 at the door, with heavy hors d&#39;oeuvres served at every event.",
     cta: "See the Schedule",
-    to: "/programs",
+    to: "/events",
   },
   {
     icon: Users,
@@ -58,12 +59,10 @@ const ways = [
     title: "Stay Connected",
     subtitle: "Updates, events, and news",
     body: "Sign up to receive Art in Motion news, event reminders, and campaign updates delivered to your inbox. Be the first to hear about new programs and milestones.",
-    cta: "Sign Up Below",
-    to: "#contact",
+    cta: "Sign Up for Updates",
+    to: "/updates",
   },
 ];
-
-const emailSignupUrl = import.meta.env.VITE_BREVO_SIGNUP_URL || "";
 
 export default function GetInvolvedPage() {
   const [form, setForm] = useState({
@@ -166,27 +165,25 @@ export default function GetInvolvedPage() {
             </p>
           </div>
 
-          {emailSignupUrl && (
-            <div className="bg-white border border-border p-8 md:p-10 mb-8 text-center">
-              <EnvelopeSimple
-                size={32}
-                weight="duotone"
-                className="text-primary mx-auto mb-4"
-              />
-              <h3 className="font-heading text-2xl text-foreground mb-3">
-                Join the AIM Email List
-              </h3>
-              <p className="text-base text-muted-foreground font-sans mb-6 max-w-xl mx-auto">
-                Receive event reminders, program updates, and campaign news by
-                email.
-              </p>
-              <a href={emailSignupUrl} target="_blank" rel="noopener noreferrer">
-                <Button className="bg-primary text-white hover:bg-primary/90 rounded-sm font-sans tracking-wide flex items-center gap-2 mx-auto">
-                  Sign Up for Updates <ArrowRight size={16} weight="bold" />
-                </Button>
-              </a>
-            </div>
-          )}
+          <div className="bg-white border border-border p-8 md:p-10 mb-8 text-center">
+            <EnvelopeSimple
+              size={32}
+              weight="duotone"
+              className="text-primary mx-auto mb-4"
+            />
+            <h3 className="font-heading text-2xl text-foreground mb-3">
+              Join the AIM Email List
+            </h3>
+            <p className="text-base text-muted-foreground font-sans mb-6 max-w-xl mx-auto">
+              Receive event reminders, program updates, and campaign news by
+              email.
+            </p>
+            <Link to={eventsSignupPath}>
+              <Button className="bg-primary text-white hover:bg-primary/90 rounded-sm font-sans tracking-wide flex items-center gap-2 mx-auto">
+                Sign Up for Updates <ArrowRight size={16} weight="bold" />
+              </Button>
+            </Link>
+          </div>
 
           {submitted ? (
             <div className="bg-white border border-primary p-10 text-center">

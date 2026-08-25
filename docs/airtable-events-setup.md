@@ -36,10 +36,22 @@ Create a view named `Published` that filters to `Published` checked.
 Add these repository variables:
 
 - `VITE_AIRTABLE_EVENTS_EMBED_URL`: optional Airtable calendar view embed URL override
-- `VITE_BREVO_SIGNUP_URL`
 - `VITE_STRIPE_DONATE_URL`
 
 No Airtable API token is required for the embedded calendar setup.
+
+## Brevo Email Signup
+
+The current site default uses this Brevo form:
+
+`https://37a3dbcd.sibforms.com/v2/serve/MUIFANrgnL_wFGfjXU_WRf81G4XSqvRsJu7qE3n4xmliHSq56Ky5jpOlCZg0MUSlECSyDYhmpL0Rz4BSx30E2CjMnmmGhayiwXyejL_DQvZW9WdBwLBDjWhugX5obALJRfo81T4Dl4judkNLKdZdg7yTydBVRAO0uETGd0INAB6X8k3ZD8Z-4Mc9-g4up1qFODPhhDLmr8MiHXk4gg==`
+
+The public signup page is `/updates`, which embeds the Brevo form on the AIM
+domain. Share `https://aim-hotsprings.org/updates` on flyers, social posts, and
+emails instead of the long Brevo URL.
+
+If you replace the Brevo form later, update the iframe `src` in
+`src/pages/UpdatesPage.tsx` and rebuild the site.
 
 ## Airtable Calendar Embed
 

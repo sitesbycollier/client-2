@@ -138,12 +138,12 @@ export default function HomePage() {
                   Our Mission & Story <ArrowRight size={14} weight="bold" />
                 </Button>
               </Link>
-              <Link to="/programs">
+              <Link to="/events">
                 <Button
                   variant="ghost"
                   className="rounded-none font-sans tracking-wide text-muted-foreground hover:text-foreground hover:bg-muted flex items-center gap-2"
                 >
-                  Our Programs <ArrowRight size={14} weight="bold" />
+                  Programs & Events <ArrowRight size={14} weight="bold" />
                 </Button>
               </Link>
             </div>
@@ -401,7 +401,7 @@ export default function HomePage() {
               <p className="text-sm text-white/65 font-sans mb-4">
                 Monthly gatherings open to all. $15 at the door.
               </p>
-              <Link to="/programs">
+              <Link to="/events">
                 <Button
                   size="sm"
                   variant="outline"
