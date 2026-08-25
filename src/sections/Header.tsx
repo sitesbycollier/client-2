@@ -8,7 +8,6 @@ const navLinks = [
   { label: "Programs & Events", to: "/events" },
   { label: "The Gathering Place", to: "/gathering-center" },
   { label: "Capital Campaign", to: "/campaign" },
-  { label: "Get Involved", to: "/get-involved" },
 ];
 
 export default function Header() {
