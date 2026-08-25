@@ -71,7 +71,7 @@ export default function Footer() {
                 <InstagramLogo size={20} weight="duotone" />
               </a>
               <a
-                href="mailto:info@artsinmotion.org"
+                href="mailto:brinkleyd520@yahoo.com"
                 aria-label="Email"
                 className="text-background/40 hover:text-background transition-colors duration-200"
               >
@@ -112,10 +112,10 @@ export default function Footer() {
                   className="text-background/40 mt-0.5 shrink-0"
                 />
                 <a
-                  href="mailto:info@artsinmotion.org"
+                  href="mailto:brinkleyd520@yahoo.com"
                   className="text-sm text-background/65 hover:text-background transition-colors duration-200 font-sans"
                 >
-                  info@artsinmotion.org
+                  brinkleyd520@yahoo.com
                 </a>
               </li>
               <li className="flex items-start gap-3">
@@ -125,10 +125,10 @@ export default function Footer() {
                   className="text-background/40 mt-0.5 shrink-0"
                 />
                 <a
-                  href="tel:+15015550100"
+                  href="tel:+15016063616"
                   className="text-sm text-background/65 hover:text-background transition-colors duration-200 font-sans"
                 >
-                  (501) 555-0100
+                  (501) 606-3616
                 </a>
               </li>
               <li className="flex items-start gap-3">
