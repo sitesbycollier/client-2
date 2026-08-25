@@ -332,9 +332,9 @@ export default function HomePage() {
                 Sunday · 3:00 – 5:30 pm
               </p>
             </div>
-            <Link to="/get-involved" className="w-full">
+            <Link to="/events" className="w-full">
               <Button className="w-full bg-primary text-white hover:bg-primary/90 rounded-none font-sans tracking-wide py-5">
-                Get Event Updates
+                See Upcoming Events
               </Button>
             </Link>
           </div>

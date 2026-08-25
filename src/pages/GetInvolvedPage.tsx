@@ -63,6 +63,8 @@ const ways = [
   },
 ];
 
+const emailSignupUrl = import.meta.env.VITE_BREVO_SIGNUP_URL || "";
+
 export default function GetInvolvedPage() {
   const [form, setForm] = useState({
     name: "",
@@ -163,6 +165,28 @@ export default function GetInvolvedPage() {
               campaign? We would love to hear from you.
             </p>
           </div>
+
+          {emailSignupUrl && (
+            <div className="bg-white border border-border p-8 md:p-10 mb-8 text-center">
+              <EnvelopeSimple
+                size={32}
+                weight="duotone"
+                className="text-primary mx-auto mb-4"
+              />
+              <h3 className="font-heading text-2xl text-foreground mb-3">
+                Join the AIM Email List
+              </h3>
+              <p className="text-base text-muted-foreground font-sans mb-6 max-w-xl mx-auto">
+                Receive event reminders, program updates, and campaign news by
+                email.
+              </p>
+              <a href={emailSignupUrl} target="_blank" rel="noopener noreferrer">
+                <Button className="bg-primary text-white hover:bg-primary/90 rounded-sm font-sans tracking-wide flex items-center gap-2 mx-auto">
+                  Sign Up for Updates <ArrowRight size={16} weight="bold" />
+                </Button>
+              </a>
+            </div>
+          )}
 
           {submitted ? (
             <div className="bg-white border border-primary p-10 text-center">

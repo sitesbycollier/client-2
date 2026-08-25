@@ -57,6 +57,8 @@ const impacts = [
   },
 ];
 
+const donateUrl = import.meta.env.VITE_STRIPE_DONATE_URL || "";
+
 export default function CampaignPage() {
   return (
     <div className="bg-white">
@@ -222,14 +224,25 @@ export default function CampaignPage() {
             about naming opportunities, grants, and ways to give.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/get-involved">
-              <Button
-                size="lg"
-                className="bg-white text-primary hover:bg-white/90 rounded-sm font-sans flex items-center gap-2"
-              >
-                Donate or Pledge <ArrowRight size={16} weight="bold" />
-              </Button>
-            </Link>
+            {donateUrl ? (
+              <a href={donateUrl} target="_blank" rel="noopener noreferrer">
+                <Button
+                  size="lg"
+                  className="bg-white text-primary hover:bg-white/90 rounded-sm font-sans flex items-center gap-2"
+                >
+                  Donate Now <ArrowRight size={16} weight="bold" />
+                </Button>
+              </a>
+            ) : (
+              <Link to="/get-involved">
+                <Button
+                  size="lg"
+                  className="bg-white text-primary hover:bg-white/90 rounded-sm font-sans flex items-center gap-2"
+                >
+                  Donate or Pledge <ArrowRight size={16} weight="bold" />
+                </Button>
+              </Link>
+            )}
             <Link to="/gathering-center">
               <Button
                 size="lg"
