@@ -166,10 +166,21 @@ export default function Footer() {
             © {new Date().getFullYear()} Art in Motion. All rights reserved.
             &nbsp;·&nbsp; 501(c)(3) Nonprofit Organization
           </p>
-          <p className="text-xs text-background/35 tracking-wide flex items-center gap-1.5 font-sans">
-            <Heart size={11} weight="fill" className="text-accent" />
-            Serving Hot Springs &amp; Garland County
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 text-xs text-background/35 tracking-wide font-sans">
+            <p className="flex items-center gap-1.5">
+              <Heart size={11} weight="fill" className="text-accent" />
+              Serving Hot Springs &amp; Garland County
+            </p>
+            <span className="hidden sm:inline text-background/20">·</span>
+            <a
+              href="https://sitesbycollier.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-background transition-colors duration-200"
+            >
+              Built by Sites By Collier
+            </a>
+          </div>
         </div>
       </div>
     </footer>

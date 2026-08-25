@@ -17,6 +17,16 @@
       content="Improving quality of life for adults through wellness, arts, education, and community engagement. Building The Gathering Place for Hot Springs."
     />
     <meta property="og:type" content="website" />
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var redirect = params.get("redirect");
+
+        if (redirect && redirect.charAt(0) === "/") {
+          window.history.replaceState(null, "", redirect);
+        }
+      })();
+    </script>
     <title>Art in Motion — Community Nonprofit | Hot Springs, AR</title>
   </head>
   <body>
