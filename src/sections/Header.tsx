@@ -6,6 +6,7 @@ import { List, X } from "@phosphor-icons/react";
 const navLinks = [
   { label: "About", to: "/about" },
   { label: "Programs & Events", to: "/events" },
+  { label: "Gallery", to: "/gallery" },
   { label: "The Gathering Place", to: "/gathering-center" },
   { label: "Capital Campaign", to: "/campaign" },
 ];

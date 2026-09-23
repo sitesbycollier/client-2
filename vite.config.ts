@@ -7,6 +7,9 @@ import path from "path";
 export default defineConfig({
   plugins: [react()],
   base: "/",
+  build: {
+    target: "es2018",
+  },
   css: {
     postcss: {
       plugins: [tailwind()],

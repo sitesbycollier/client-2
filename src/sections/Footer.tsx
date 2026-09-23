@@ -12,6 +12,7 @@ import {
 const navLinks = [
   { label: "About AIM", to: "/about" },
   { label: "Programs & Events", to: "/events" },
+  { label: "Gallery", to: "/gallery" },
   { label: "Get Event Updates", to: "/updates" },
   { label: "The Gathering Place", to: "/gathering-center" },
   { label: "Capital Campaign", to: "/campaign" },

@@ -7,6 +7,7 @@ import CampaignPage from "./pages/CampaignPage";
 import GetInvolvedPage from "./pages/GetInvolvedPage";
 import EventsPage from "./pages/EventsPage";
 import UpdatesPage from "./pages/UpdatesPage";
+import GalleryPage from "./pages/GalleryPage";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
       { path: "about", element: <AboutPage /> },
       { path: "gathering-center", element: <GatheringCenterPage /> },
       { path: "events", element: <EventsPage /> },
+      { path: "gallery", element: <GalleryPage /> },
       { path: "updates", element: <UpdatesPage /> },
       { path: "campaign", element: <CampaignPage /> },
       { path: "get-involved", element: <GetInvolvedPage /> },
