@@ -66,7 +66,7 @@ export default function CampaignPage() {
         eyebrow="Capital Campaign · Art in Motion"
         title="Building a Place for Community"
         description="Art in Motion is launching The Gathering Place Capital Campaign to establish a permanent, welcoming destination where adults come together to connect, learn, celebrate, create, and thrive — and where community is built to last."
-        backgroundImage="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1600&q=80"
+        backgroundImage="/assets/gathering-place/ballroom-vision.jpg"
         overlayOpacityClassName="opacity-[0.08]"
         afterTitle={
           <div className="inline-block bg-white/8 border border-white/15 px-6 py-5 mb-8">
@@ -113,16 +113,18 @@ export default function CampaignPage() {
             </p>
           </div>
           <div className="border border-border p-3 bg-white shadow-sm">
-            <div className="aspect-[4/3] overflow-hidden bg-muted">
+            <div className="bg-muted">
               <img
-                src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80"
-                alt="Grand community event hall — The Gathering Place vision"
-                className="w-full h-full object-cover"
+                src="/assets/gathering-place/ballroom-vision.jpg"
+                alt="Concept rendering of The Gathering Place ballroom with dance floor, stage, and banquet seating"
+                width={1920}
+                height={1088}
+                className="w-full h-auto"
                 loading="lazy"
               />
             </div>
             <p className="text-xs text-muted-foreground mt-2 text-center uppercase tracking-wide font-sans">
-              The Gathering Place — Hot Springs, Arkansas
+              The Gathering Place - ballroom concept rendering
             </p>
           </div>
         </div>
@@ -243,7 +245,7 @@ export default function CampaignPage() {
                 </Button>
               </Link>
             )}
-            <Link to="/gathering-center">
+            <Link to="/gathering-place">
               <Button
                 size="lg"
                 variant="outline"

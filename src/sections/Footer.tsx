@@ -14,7 +14,7 @@ const navLinks = [
   { label: "Programs & Events", to: "/events" },
   { label: "Gallery", to: "/gallery" },
   { label: "Get Event Updates", to: "/updates" },
-  { label: "The Gathering Place", to: "/gathering-center" },
+  { label: "The Gathering Place", to: "/gathering-place" },
   { label: "Capital Campaign", to: "/campaign" },
   { label: "Get Involved", to: "/get-involved" },
 ];

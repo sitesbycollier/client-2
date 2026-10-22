@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import GatheringCenterPage from "./pages/GatheringCenterPage";
+import GatheringPlacePage from "./pages/GatheringPlacePage";
 import CampaignPage from "./pages/CampaignPage";
 import GetInvolvedPage from "./pages/GetInvolvedPage";
 import EventsPage from "./pages/EventsPage";
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: "about", element: <AboutPage /> },
-      { path: "gathering-center", element: <GatheringCenterPage /> },
+      { path: "gathering-place", element: <GatheringPlacePage /> },
       { path: "events", element: <EventsPage /> },
       { path: "gallery", element: <GalleryPage /> },
       { path: "updates", element: <UpdatesPage /> },

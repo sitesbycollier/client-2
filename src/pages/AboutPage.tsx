@@ -213,7 +213,7 @@ export default function AboutPage() {
           how you can get involved in the mission.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link to="/gathering-center">
+          <Link to="/gathering-place">
             <Button
               size="lg"
               className="bg-primary text-white hover:bg-primary/90 rounded-sm font-sans flex items-center gap-2"

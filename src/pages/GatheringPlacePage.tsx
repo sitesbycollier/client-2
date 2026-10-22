@@ -9,7 +9,51 @@ import {
   Heart,
   Handshake,
   MapPin,
+  ArrowsOut,
 } from "@phosphor-icons/react";
+
+function VisionRendering({
+  src,
+  title,
+  alt,
+  width,
+  height,
+}: {
+  src: string;
+  title: string;
+  alt: string;
+  width: number;
+  height: number;
+}) {
+  return (
+    <figure className="min-w-0">
+      <a
+        href={src}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`View full-size ${title.toLowerCase()} rendering (opens in a new tab)`}
+        title="View full-size rendering"
+        className="group relative block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-4"
+      >
+        <img
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          className="w-full h-auto"
+          loading="lazy"
+        />
+        <span className="absolute bottom-3 right-3 bg-white/95 text-primary p-2 shadow-sm group-hover:bg-white" aria-hidden="true">
+          <ArrowsOut size={20} />
+        </span>
+      </a>
+      <figcaption className="mt-3 font-sans">
+        <h3 className="font-heading text-xl text-foreground">{title}</h3>
+        <p className="text-sm text-muted-foreground mt-1">Concept rendering</p>
+      </figcaption>
+    </figure>
+  );
+}
 
 const pillars = [
   {
@@ -44,15 +88,15 @@ const pillars = [
   },
 ];
 
-export default function GatheringCenterPage() {
+export default function GatheringPlacePage() {
   return (
     <div className="bg-white">
       <PageHero
-        eyebrow="Hero Project &amp;nbsp;·&amp;nbsp; Art in Motion"
+        eyebrow="Hero Project · Art in Motion"
         eyebrowClassName="text-accent"
         title="The Gathering Place"
         description="A permanent, welcoming destination where adults come together to learn, celebrate, create, connect, and thrive — strengthening the cultural, economic, and social fabric of Hot Springs and Garland County."
-        backgroundImage="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=1600&amp;q=80"
+        backgroundImage="/assets/gathering-place/exterior-vision.jpg"
       >
         <Link to="/campaign">
           <Button
@@ -65,7 +109,7 @@ export default function GatheringCenterPage() {
       </PageHero>
 
       {/* Facility Vision */}
-      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 py-20">
+      <div id="vision" className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 py-20 scroll-mt-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-xs uppercase tracking-widest text-primary mb-3 font-sans">
@@ -90,19 +134,36 @@ export default function GatheringCenterPage() {
               full range of human connection.
             </p>
           </div>
-          <div className="border border-border p-3 bg-white shadow-sm">
-            <div className="aspect-[4/3] overflow-hidden bg-muted">
-              <img
-                src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&q=80"
-                alt="Beautiful restored venue interior with elegant architecture — Gathering Place vision"
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-            <p className="text-xs text-muted-foreground mt-2 text-center uppercase tracking-wide font-sans">
-              The Gathering Place — Hot Springs, Arkansas
-            </p>
-          </div>
+          <VisionRendering
+            src="/assets/gathering-place/exterior-vision.jpg"
+            title="Exterior"
+            alt="Concept rendering of The Gathering Place exterior with stone facade, AIM signage, and covered entrances"
+            width={2046}
+            height={961}
+          />
+        </div>
+        <div className="mt-14 mb-8">
+          <h2 className="font-heading text-3xl text-foreground">Inside The Gathering Place</h2>
+          <p className="text-base text-muted-foreground font-sans mt-3">
+            A vision for the ballroom and bar room. These concept renderings
+            illustrate the proposed spaces, rather than the facility as it exists today.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+          <VisionRendering
+            src="/assets/gathering-place/ballroom-vision.jpg"
+            title="Ballroom"
+            alt="Concept rendering of the ballroom with a large wood dance floor, stage, chandeliers, and banquet seating"
+            width={1920}
+            height={1088}
+          />
+          <VisionRendering
+            src="/assets/gathering-place/bar-room-vision.jpg"
+            title="Bar Room"
+            alt="Concept rendering of the bar room with table seating, a bar counter, and an adjacent wood dance floor"
+            width={2048}
+            height={1536}
+          />
         </div>
       </div>
 

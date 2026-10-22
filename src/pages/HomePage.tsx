@@ -61,7 +61,7 @@ export default function HomePage() {
               Hot Springs & Garland County, AR
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/gathering-center">
+              <Link to="/gathering-place">
                 <Button
                   size="lg"
                   className="bg-white text-foreground hover:bg-white/90 rounded-none font-sans font-medium tracking-wide flex items-center gap-2 px-8 py-6 text-base shadow-lg"
@@ -211,16 +211,18 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 py-20 md:py-28">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
             <div className="border border-white/15 p-3">
-              <div className="aspect-[4/3] overflow-hidden">
+              <div>
                 <img
-                  src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&q=80"
-                  alt="Elegant ballroom event hall with warm lighting — The Gathering Place vision"
-                  className="w-full h-full object-cover opacity-85"
+                  src="/assets/gathering-place/exterior-vision.jpg"
+                  alt="Concept rendering of The Gathering Place exterior with AIM signage and covered entrances"
+                  width={2046}
+                  height={961}
+                  className="w-full h-auto"
                   loading="lazy"
                 />
               </div>
-              <p className="text-xs text-white/35 mt-2 text-center uppercase tracking-wide font-sans">
-                The Gathering Place — vision for Hot Springs
+              <p className="text-xs text-white/70 mt-2 text-center uppercase tracking-wide font-sans">
+                The Gathering Place - exterior concept rendering
               </p>
             </div>
             <div>
@@ -250,7 +252,7 @@ export default function HomePage() {
                 <p className="font-heading text-4xl text-accent">$1,500,000</p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/gathering-center">
+                <Link to="/gathering-place">
                   <Button
                     size="lg"
                     className="bg-accent hover:bg-accent/90 text-white rounded-none font-sans tracking-wide flex items-center gap-2"
