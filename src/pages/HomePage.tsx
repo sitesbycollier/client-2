@@ -74,7 +74,7 @@ export default function HomePage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="bg-transparent border-white/30 text-white hover:bg-white/10 rounded-none font-sans tracking-wide px-8 py-6 text-base"
+                  className="bg-transparent border-white/30 text-white hover:bg-white/10 hover:text-white rounded-none font-sans tracking-wide px-8 py-6 text-base"
                 >
                   $1.5M Capital Campaign
                 </Button>
@@ -266,7 +266,7 @@ export default function HomePage() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="bg-transparent border-white/25 text-white hover:bg-white/10 rounded-none font-sans tracking-wide"
+                    className="bg-transparent border-white/25 text-white hover:bg-white/10 hover:text-white rounded-none font-sans tracking-wide"
                   >
                     View the Campaign
                   </Button>
@@ -408,7 +408,7 @@ export default function HomePage() {
                 <Button
                   size="sm"
                   variant="outline"
-                  className="bg-transparent rounded-none font-sans text-xs tracking-wide border-white/25 text-white hover:bg-white/10 flex items-center gap-1.5 mx-auto md:mx-0"
+                  className="bg-transparent rounded-none font-sans text-xs tracking-wide border-white/25 text-white hover:bg-white/10 hover:text-white flex items-center gap-1.5 mx-auto md:mx-0"
                 >
                   See Schedule <ArrowRight size={12} weight="bold" />
                 </Button>
@@ -428,7 +428,7 @@ export default function HomePage() {
                 asChild
                 size="sm"
                 variant="outline"
-                className="bg-transparent rounded-none font-sans text-xs tracking-wide border-white/25 text-white hover:bg-white/10 flex items-center gap-1.5 mx-auto md:mx-0"
+                className="bg-transparent rounded-none font-sans text-xs tracking-wide border-white/25 text-white hover:bg-white/10 hover:text-white flex items-center gap-1.5 mx-auto md:mx-0"
               >
                 <a href={donateUrl} target="_blank" rel="noopener noreferrer">
                   Donate Now <ArrowRight size={12} weight="bold" />
@@ -449,7 +449,7 @@ export default function HomePage() {
                 <Button
                   size="sm"
                   variant="outline"
-                  className="bg-transparent rounded-none font-sans text-xs tracking-wide border-white/25 text-white hover:bg-white/10 flex items-center gap-1.5 mx-auto md:mx-0"
+                  className="bg-transparent rounded-none font-sans text-xs tracking-wide border-white/25 text-white hover:bg-white/10 hover:text-white flex items-center gap-1.5 mx-auto md:mx-0"
                 >
                   Get Involved <ArrowRight size={12} weight="bold" />
                 </Button>

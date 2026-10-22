@@ -238,7 +238,7 @@ export default function CampaignPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white/35 text-white hover:bg-white/10 rounded-sm font-sans"
+                className="bg-transparent border-white/35 text-white hover:bg-white/10 hover:text-white rounded-sm font-sans"
               >
                 Learn About the Project
               </Button>
