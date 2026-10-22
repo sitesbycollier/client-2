@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { donateUrl } from "@/data/externalLinks";
 import { List, X } from "@phosphor-icons/react";
 
 const navLinks = [
@@ -55,15 +56,16 @@ export default function Header() {
 
           {/* Desktop CTAs */}
           <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
-            <Link to="/campaign">
-              <Button
-                variant="outline"
-                size="sm"
-                className="rounded-sm text-xs tracking-wide border-primary text-primary hover:bg-primary hover:text-white transition-colors duration-200"
-              >
-                Support the Campaign
-              </Button>
-            </Link>
+            <Button
+              asChild
+              variant="outline"
+              size="sm"
+              className="rounded-sm text-xs tracking-wide border-primary text-primary hover:bg-primary hover:text-white transition-colors duration-200"
+            >
+              <a href={donateUrl} target="_blank" rel="noopener noreferrer">
+                Donate
+              </a>
+            </Button>
             <Link to="/get-involved">
               <Button
                 size="sm"
@@ -124,15 +126,21 @@ export default function Header() {
               </NavLink>
             ))}
             <div className="pt-4 pb-2">
-              <Link to="/campaign" onClick={() => setMobileNavOpen(false)}>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="w-full rounded-sm text-xs tracking-wide border-primary text-primary hover:bg-primary hover:text-white"
+              <Button
+                asChild
+                variant="outline"
+                size="sm"
+                className="w-full rounded-sm text-xs tracking-wide border-primary text-primary hover:bg-primary hover:text-white"
+              >
+                <a
+                  href={donateUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setMobileNavOpen(false)}
                 >
-                  Support the Campaign
-                </Button>
-              </Link>
+                  Donate
+                </a>
+              </Button>
             </div>
           </nav>
         </div>

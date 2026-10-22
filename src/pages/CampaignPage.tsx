@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import PageHero from "@/components/PageHero";
+import { donateUrl } from "@/data/externalLinks";
 import {
   ArrowRight,
   CheckCircle,
@@ -57,8 +58,6 @@ const impacts = [
   },
 ];
 
-const donateUrl = import.meta.env.VITE_STRIPE_DONATE_URL || "";
-
 export default function CampaignPage() {
   return (
     <div className="bg-white">
@@ -100,7 +99,7 @@ export default function CampaignPage() {
             <p className="text-base text-muted-foreground leading-relaxed font-sans mb-5">
               The campaign will fund the acquisition, restoration,
               modernization, and long-term sustainability of The Gathering
-              Center — creating a destination where adults feel genuinely
+              Place — creating a destination where adults feel genuinely
               welcome, and where meaningful programming touches every dimension
               of a well-lived life: physical wellness, creative expression,
               intellectual growth, civic engagement, and social belonging.
@@ -226,25 +225,15 @@ export default function CampaignPage() {
             about naming opportunities, grants, and ways to give.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            {donateUrl ? (
+            <Button
+              asChild
+              size="lg"
+              className="bg-white text-primary hover:bg-white/90 rounded-sm font-sans flex items-center gap-2"
+            >
               <a href={donateUrl} target="_blank" rel="noopener noreferrer">
-                <Button
-                  size="lg"
-                  className="bg-white text-primary hover:bg-white/90 rounded-sm font-sans flex items-center gap-2"
-                >
-                  Donate Now <ArrowRight size={16} weight="bold" />
-                </Button>
+                Donate Now <ArrowRight size={16} weight="bold" />
               </a>
-            ) : (
-              <Link to="/get-involved">
-                <Button
-                  size="lg"
-                  className="bg-white text-primary hover:bg-white/90 rounded-sm font-sans flex items-center gap-2"
-                >
-                  Donate or Pledge <ArrowRight size={16} weight="bold" />
-                </Button>
-              </Link>
-            )}
+            </Button>
             <Link to="/gathering-place">
               <Button
                 size="lg"

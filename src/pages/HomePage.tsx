@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { donateUrl } from "@/data/externalLinks";
 import {
   ArrowRight,
   Users,
@@ -423,15 +424,16 @@ export default function HomePage() {
               <p className="text-sm text-white/65 font-sans mb-4">
                 Help us build The Gathering Place for Hot Springs.
               </p>
-              <Link to="/campaign">
-                <Button
-                  size="sm"
-                  variant="outline"
-                  className="bg-transparent rounded-none font-sans text-xs tracking-wide border-white/25 text-white hover:bg-white/10 flex items-center gap-1.5 mx-auto md:mx-0"
-                >
-                  $1.5M Campaign <ArrowRight size={12} weight="bold" />
-                </Button>
-              </Link>
+              <Button
+                asChild
+                size="sm"
+                variant="outline"
+                className="bg-transparent rounded-none font-sans text-xs tracking-wide border-white/25 text-white hover:bg-white/10 flex items-center gap-1.5 mx-auto md:mx-0"
+              >
+                <a href={donateUrl} target="_blank" rel="noopener noreferrer">
+                  Donate Now <ArrowRight size={12} weight="bold" />
+                </a>
+              </Button>
             </div>
             <div className="pl-0 md:pl-8">
               <p className="text-xs uppercase tracking-widest text-white/45 mb-2 font-sans">

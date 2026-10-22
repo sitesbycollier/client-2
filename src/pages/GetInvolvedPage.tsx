@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import PageHero from "@/components/PageHero";
-import { eventsSignupPath } from "@/data/externalLinks";
+import { donateUrl, eventsSignupPath } from "@/data/externalLinks";
 import {
   ArrowRight,
   Heart,
@@ -19,8 +19,8 @@ const ways = [
     title: "Donate",
     subtitle: "Support the Capital Campaign",
     body: "Your gift helps build The Gathering Place — a permanent home for community programming, arts, wellness, and celebration in Hot Springs. Every dollar moves us closer to $1,500,000.",
-    cta: "Support the Campaign",
-    to: "/campaign",
+    cta: "Donate Now",
+    to: donateUrl,
   },
   {
     icon: CalendarBlank,
@@ -135,15 +135,20 @@ export default function GetInvolvedPage() {
                   </Button>
                 </Link>
               ) : (
-                <a href={to}>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="rounded-sm font-sans text-xs tracking-wide border-primary text-primary hover:bg-primary hover:text-white transition-colors flex items-center gap-1.5"
+                <Button
+                  asChild
+                  variant="outline"
+                  size="sm"
+                  className="rounded-sm font-sans text-xs tracking-wide border-primary text-primary hover:bg-primary hover:text-white transition-colors flex items-center gap-1.5 self-start"
+                >
+                  <a
+                    href={to}
+                    target={to.startsWith("https://") ? "_blank" : undefined}
+                    rel={to.startsWith("https://") ? "noopener noreferrer" : undefined}
                   >
                     {cta} <ArrowRight size={12} weight="bold" />
-                  </Button>
-                </a>
+                  </a>
+                </Button>
               )}
             </div>
           ))}
