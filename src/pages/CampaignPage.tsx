@@ -64,7 +64,7 @@ export default function CampaignPage() {
       <PageHero
         eyebrow="Capital Campaign · Art in Motion"
         title="Building a Place for Community"
-        description="Art in Motion is launching The Gathering Place Capital Campaign to establish a permanent, welcoming destination where adults come together to connect, learn, celebrate, create, and thrive — and where community is built to last."
+        description="Help AIM (Art in Motion) at The Gathering Place create a permanent, welcoming place for connection, learning, creating, and thriving - where community is built to last."
         backgroundImage="/assets/gathering-place/ballroom-vision.jpg"
         overlayOpacityClassName="opacity-[0.08]"
         afterTitle={
@@ -87,28 +87,25 @@ export default function CampaignPage() {
               Case for Support
             </p>
             <h2 className="font-heading text-3xl md:text-4xl text-foreground leading-tight mb-6">
-              Why This Campaign, Why Now
+              Bringing Together Wellness, Arts, Lifelong Learning, and Community
+              Connection
             </h2>
             <p className="text-base text-muted-foreground leading-relaxed font-sans mb-5">
-              The Gathering Place is more than a building. It is an investment
-              in what makes a community worth staying in — and worth building.
-              Hot Springs has a deep history as a place of restoration and
-              gathering, and the need for accessible, permanent spaces where
-              adults can connect, learn, and engage has never been greater.
+              AIM (Art in Motion) at The Gathering Place knows that every
+              community needs places where people are expected, welcomed, and
+              encouraged to take part. AIM will improve quality of life for
+              participants through wellness, arts, education, social connection,
+              and community engagement.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed font-sans mb-5">
-              The campaign will fund the acquisition, restoration,
-              modernization, and long-term sustainability of The Gathering
-              Place — creating a destination where adults feel genuinely
-              welcome, and where meaningful programming touches every dimension
-              of a well-lived life: physical wellness, creative expression,
-              intellectual growth, civic engagement, and social belonging.
+              We know that change starts with people like you. Every act of
+              kindness and every dollar brings us closer to achieving our
+              mission.
             </p>
             <p className="text-base text-muted-foreground leading-relaxed font-sans">
-              Through this investment, funders help build something rare: a
-              lasting community asset that strengthens the cultural, economic,
-              and social fabric of Hot Springs and Garland County — and gives
-              adults a place to truly thrive.
+              Together, we can create the programs and offerings needed to
+              provide a permanent, welcoming place for connection, learning,
+              creating, and thriving - where community is built to last.
             </p>
           </div>
           <div className="border border-border p-3 bg-white shadow-sm">
@@ -127,6 +124,37 @@ export default function CampaignPage() {
             </p>
           </div>
         </div>
+        <section aria-labelledby="power-mission-title" className="mt-12 border-t border-border pt-10">
+          <h2 id="power-mission-title" className="font-heading text-2xl md:text-3xl text-foreground mb-6">
+            How You Can Help Power Our Mission
+          </h2>
+          <ol className="grid grid-cols-1 md:grid-cols-2 gap-8 list-decimal pl-5 font-sans text-primary">
+            <li className="pl-2">
+              <h3 className="font-heading text-xl text-foreground mb-3">Donate</h3>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                Every dollar counts.{' '}
+                <a
+                  href={donateUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline underline-offset-4 hover:text-primary/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                >
+                  Contribute now
+                </a>{' '}
+                to help us reach our $1.5 million goal.
+              </p>
+            </li>
+            <li className="pl-2">
+              <h3 className="font-heading text-xl text-foreground mb-3">Share</h3>
+              <p className="text-base text-muted-foreground leading-relaxed">
+                Share our campaign with your friends, family, and colleagues in
+                person and on social media. Your advocacy can amplify our impact
+                and help us create a sustainable community asset for generations
+                to come.
+              </p>
+            </li>
+          </ol>
+        </section>
       </div>
 
       {/* Campaign Priorities */}
@@ -220,9 +248,8 @@ export default function CampaignPage() {
             Support the Campaign Today
           </h2>
           <p className="text-base text-white/75 font-sans mb-8 max-w-xl mx-auto">
-            Every gift — of any size — helps build a place where adults can
-            connect, learn, create, celebrate, and belong. Contact us to learn
-            about naming opportunities, grants, and ways to give.
+            Thank you for supporting our mission. We are grateful for your
+            support and the invaluable impact it makes for those we serve.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
