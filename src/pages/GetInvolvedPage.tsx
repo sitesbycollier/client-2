@@ -1,8 +1,7 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import PageHero from "@/components/PageHero";
-import { donateUrl, eventsSignupPath } from "@/data/externalLinks";
+import { contact, donateUrl, eventsSignupPath } from "@/data/externalLinks";
 import {
   ArrowRight,
   Heart,
@@ -11,6 +10,7 @@ import {
   EnvelopeSimple,
   Buildings,
   Users,
+  Phone,
 } from "@phosphor-icons/react";
 
 const ways = [
@@ -65,28 +65,6 @@ const ways = [
 ];
 
 export default function GetInvolvedPage() {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    interest: "",
-    message: "",
-  });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >,
-  ) => {
-    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-  };
-
   return (
     <div className="bg-white">
       <PageHero
@@ -190,134 +168,44 @@ export default function GetInvolvedPage() {
             </Link>
           </div>
 
-          {submitted ? (
-            <div className="bg-white border border-primary p-10 text-center">
-              <Heart
-                size={36}
-                weight="duotone"
-                className="text-primary mx-auto mb-4"
-              />
-              <h3 className="font-heading text-2xl text-foreground mb-3">
-                Thank You!
-              </h3>
-              <p className="text-base text-muted-foreground font-sans">
-                We&#39;ve received your message and will be in touch soon.
-                We&#39;re glad you&#39;re here.
-              </p>
-            </div>
-          ) : (
-            <form
-              onSubmit={handleSubmit}
-              className="bg-white border border-border p-8 md:p-10 flex flex-col gap-5"
-            >
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                <div className="flex flex-col gap-1.5">
-                  <label
-                    className="text-xs uppercase tracking-widest text-muted-foreground font-sans"
-                    htmlFor="name"
-                  >
-                    Full Name *
-                  </label>
-                  <input
-                    id="name"
-                    name="name"
-                    type="text"
-                    required
-                    value={form.name}
-                    onChange={handleChange}
-                    className="border border-border bg-background px-4 py-2.5 text-sm font-sans text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent rounded-sm"
-                    placeholder="Your name"
-                  />
-                </div>
-                <div className="flex flex-col gap-1.5">
-                  <label
-                    className="text-xs uppercase tracking-widest text-muted-foreground font-sans"
-                    htmlFor="email"
-                  >
-                    Email Address *
-                  </label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    required
-                    value={form.email}
-                    onChange={handleChange}
-                    className="border border-border bg-background px-4 py-2.5 text-sm font-sans text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent rounded-sm"
-                    placeholder="you@email.com"
-                  />
-                </div>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                <div className="flex flex-col gap-1.5">
-                  <label
-                    className="text-xs uppercase tracking-widest text-muted-foreground font-sans"
-                    htmlFor="phone"
-                  >
-                    Phone (optional)
-                  </label>
-                  <input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    value={form.phone}
-                    onChange={handleChange}
-                    className="border border-border bg-background px-4 py-2.5 text-sm font-sans text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent rounded-sm"
-                    placeholder="(501) 555-0100"
-                  />
-                </div>
-                <div className="flex flex-col gap-1.5">
-                  <label
-                    className="text-xs uppercase tracking-widest text-muted-foreground font-sans"
-                    htmlFor="interest"
-                  >
-                    I&#39;m interested in…
-                  </label>
-                  <select
-                    id="interest"
-                    name="interest"
-                    value={form.interest}
-                    onChange={handleChange}
-                    className="border border-border bg-background px-4 py-2.5 text-sm font-sans text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent rounded-sm"
-                  >
-                    <option value="">Select an option</option>
-                    <option value="donate">Donating to the Campaign</option>
-                    <option value="volunteer">Volunteering</option>
-                    <option value="attend">Attending a Dance</option>
-                    <option value="partner">Organizational Partnership</option>
-                    <option value="updates">
-                      Staying Connected / Email Updates
-                    </option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-              </div>
-              <div className="flex flex-col gap-1.5">
-                <label
-                  className="text-xs uppercase tracking-widest text-muted-foreground font-sans"
-                  htmlFor="message"
-                >
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={5}
-                  value={form.message}
-                  onChange={handleChange}
-                  className="border border-border bg-background px-4 py-2.5 text-sm font-sans text-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent rounded-sm resize-none"
-                  placeholder="Tell us how you&#39;d like to get involved, or ask us anything…"
-                />
-              </div>
+          <div className="border-t border-border pt-8 text-center">
+            <h3 className="font-heading text-2xl text-foreground mb-3">
+              Contact AIM Directly
+            </h3>
+            <p className="text-base text-muted-foreground font-sans mb-6">
+              For questions, volunteering, partnerships, or giving, reach us by
+              email or phone.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
-                type="submit"
+                asChild
                 size="lg"
-                className="bg-primary text-white hover:bg-primary/90 rounded-sm font-sans tracking-wide w-full md:w-auto self-start flex items-center gap-2"
+                className="bg-primary text-white hover:bg-primary/90 rounded-sm font-sans"
               >
-                Send Message <ArrowRight size={16} weight="bold" />
+                <a href={`mailto:${contact.email}`}>
+                  <EnvelopeSimple size={18} weight="duotone" /> Email AIM
+                </a>
               </Button>
-            </form>
-          )}
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="border-primary text-primary hover:bg-primary hover:text-white rounded-sm font-sans"
+              >
+                <a href={contact.phoneHref}>
+                  <Phone size={18} weight="duotone" /> Call AIM
+                </a>
+              </Button>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 justify-center mt-5 text-sm text-muted-foreground font-sans">
+              <a href={`mailto:${contact.email}`} className="break-all underline underline-offset-4 hover:text-primary">
+                {contact.email}
+              </a>
+              <a href={contact.phoneHref} className="hover:text-primary">
+                {contact.phoneLabel}
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Separator } from "@/components/ui/separator";
+import { contact } from "@/data/externalLinks";
 import {
   FacebookLogo,
   InstagramLogo,
@@ -72,7 +73,7 @@ export default function Footer() {
                 <InstagramLogo size={20} weight="duotone" />
               </a>
               <a
-                href="mailto:brinkleyd520@yahoo.com"
+                href={`mailto:${contact.email}`}
                 aria-label="Email"
                 className="text-background/40 hover:text-background transition-colors duration-200"
               >
@@ -113,10 +114,10 @@ export default function Footer() {
                   className="text-background/40 mt-0.5 shrink-0"
                 />
                 <a
-                  href="mailto:brinkleyd520@yahoo.com"
+                  href={`mailto:${contact.email}`}
                   className="text-sm text-background/65 hover:text-background transition-colors duration-200 font-sans"
                 >
-                  brinkleyd520@yahoo.com
+                  {contact.email}
                 </a>
               </li>
               <li className="flex items-start gap-3">
@@ -126,10 +127,10 @@ export default function Footer() {
                   className="text-background/40 mt-0.5 shrink-0"
                 />
                 <a
-                  href="tel:+15016063616"
+                  href={contact.phoneHref}
                   className="text-sm text-background/65 hover:text-background transition-colors duration-200 font-sans"
                 >
-                  (501) 606-3616
+                  {contact.phoneLabel}
                 </a>
               </li>
               <li className="flex items-start gap-3">

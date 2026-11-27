@@ -326,15 +326,13 @@ export default function HomePage() {
             </p>
           </div>
           <div className="flex flex-col justify-center items-start gap-4">
-            <div className="bg-accent text-white p-6 w-full">
-              <p className="text-xs uppercase tracking-widest text-white/65 mb-1 font-sans">
-                Next Dance
-              </p>
-              <p className="font-heading text-2xl text-white">June 14, 2025</p>
-              <p className="text-sm text-white/75 font-sans mt-1">
-                Sunday · 3:00 – 5:30 pm
-              </p>
-            </div>
+            <h3 className="font-heading text-2xl text-foreground">
+              Find Your Next Dance
+            </h3>
+            <p className="text-base text-muted-foreground font-sans leading-relaxed">
+              Visit our calendar for upcoming dances, classes, and community
+              events, including dates, locations, and event details.
+            </p>
             <Link to="/events" className="w-full">
               <Button className="w-full bg-primary text-white hover:bg-primary/90 rounded-none font-sans tracking-wide py-5">
                 See Upcoming Events
